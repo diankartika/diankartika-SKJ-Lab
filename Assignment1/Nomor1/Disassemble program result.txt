@@ -1,0 +1,163 @@
+add_numbers:    file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000100003d40 <_main>:
+100003d40: ff 83 00 d1  sub     sp, sp, #32
+100003d44: fd 7b 01 a9  stp     x29, x30, [sp, #16]
+100003d48: fd 43 00 91  add     x29, sp, #16
+100003d4c: 08 00 80 52  mov     w8, #0
+100003d50: e8 07 00 b9  str     w8, [sp, #4]
+100003d54: bf c3 1f b8  stur    wzr, [x29, #-4]
+100003d58: a8 00 80 52  mov     w8, #5
+100003d5c: e8 0b 00 b9  str     w8, [sp, #8]
+100003d60: e1 0b 40 b9  ldr     w1, [sp, #8]
+100003d64: 00 00 00 b0  adrp    x0, 0x100004000 <_main+0x28>
+100003d68: 00 18 40 f9  ldr     x0, [x0, #48]
+100003d6c: 77 00 00 94  bl      0x100003f48 <___gxx_personality_v0+0x100003f48>
+100003d70: 01 00 00 b0  adrp    x1, 0x100004000 <_main+0x34>
+100003d74: 21 1c 40 f9  ldr     x1, [x1, #56]
+100003d78: 05 00 00 94  bl      0x100003d8c <__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB6v15006EPFRS3_S4_E>
+100003d7c: e0 07 40 b9  ldr     w0, [sp, #4]
+100003d80: fd 7b 41 a9  ldp     x29, x30, [sp, #16]
+100003d84: ff 83 00 91  add     sp, sp, #32
+100003d88: c0 03 5f d6  ret
+
+0000000100003d8c <__ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB6v15006EPFRS3_S4_E>:
+100003d8c: ff 83 00 d1  sub     sp, sp, #32
+100003d90: fd 7b 01 a9  stp     x29, x30, [sp, #16]
+100003d94: fd 43 00 91  add     x29, sp, #16
+100003d98: e0 07 00 f9  str     x0, [sp, #8]
+100003d9c: e1 03 00 f9  str     x1, [sp]
+100003da0: e0 07 40 f9  ldr     x0, [sp, #8]
+100003da4: e8 03 40 f9  ldr     x8, [sp]
+100003da8: 00 01 3f d6  blr     x8
+100003dac: fd 7b 41 a9  ldp     x29, x30, [sp, #16]
+100003db0: ff 83 00 91  add     sp, sp, #32
+100003db4: c0 03 5f d6  ret
+
+0000000100003db8 <__ZNSt3__14endlIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_>:
+100003db8: ff 83 00 d1  sub     sp, sp, #32
+100003dbc: fd 7b 01 a9  stp     x29, x30, [sp, #16]
+100003dc0: fd 43 00 91  add     x29, sp, #16
+100003dc4: e0 07 00 f9  str     x0, [sp, #8]
+100003dc8: e8 07 40 f9  ldr     x8, [sp, #8]
+100003dcc: e8 03 00 f9  str     x8, [sp]
+100003dd0: e8 07 40 f9  ldr     x8, [sp, #8]
+100003dd4: 09 01 40 f9  ldr     x9, [x8]
+100003dd8: 29 81 5e f8  ldur    x9, [x9, #-24]
+100003ddc: 00 01 09 8b  add     x0, x8, x9
+100003de0: 41 01 80 52  mov     w1, #10
+100003de4: 0b 00 00 94  bl      0x100003e10 <__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB6v15006Ec>
+100003de8: e8 03 00 aa  mov     x8, x0
+100003dec: e0 03 40 f9  ldr     x0, [sp]
+100003df0: 01 1d 00 13  sxtb    w1, w8
+100003df4: 4f 00 00 94  bl      0x100003f30 <___gxx_personality_v0+0x100003f30>
+100003df8: e0 07 40 f9  ldr     x0, [sp, #8]
+100003dfc: 50 00 00 94  bl      0x100003f3c <___gxx_personality_v0+0x100003f3c>
+100003e00: e0 07 40 f9  ldr     x0, [sp, #8]
+100003e04: fd 7b 41 a9  ldp     x29, x30, [sp, #16]
+100003e08: ff 83 00 91  add     sp, sp, #32
+100003e0c: c0 03 5f d6  ret
+
+0000000100003e10 <__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB6v15006Ec>:
+100003e10: ff 43 01 d1  sub     sp, sp, #80
+100003e14: fd 7b 04 a9  stp     x29, x30, [sp, #64]
+100003e18: fd 03 01 91  add     x29, sp, #64
+100003e1c: a0 83 1f f8  stur    x0, [x29, #-8]
+100003e20: a1 73 1f 38  sturb   w1, [x29, #-9]
+100003e24: a0 83 5f f8  ldur    x0, [x29, #-8]
+100003e28: a8 63 00 d1  sub     x8, x29, #24
+100003e2c: e8 07 00 f9  str     x8, [sp, #8]
+100003e30: 3d 00 00 94  bl      0x100003f24 <___gxx_personality_v0+0x100003f24>
+100003e34: e0 07 40 f9  ldr     x0, [sp, #8]
+100003e38: 19 00 00 94  bl      0x100003e9c <__ZNSt3__19use_facetB6v15006INS_5ctypeIcEEEERKT_RKNS_6localeE>
+100003e3c: e0 0b 00 f9  str     x0, [sp, #16]
+100003e40: 01 00 00 14  b       0x100003e44 <__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB6v15006Ec+0x34>
+100003e44: e0 0b 40 f9  ldr     x0, [sp, #16]
+100003e48: a1 73 df 38  ldursb  w1, [x29, #-9]
+100003e4c: 1f 00 00 94  bl      0x100003ec8 <__ZNKSt3__15ctypeIcE5widenB6v15006Ec>
+100003e50: e0 07 00 b9  str     w0, [sp, #4]
+100003e54: 01 00 00 14  b       0x100003e58 <__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB6v15006Ec+0x48>
+100003e58: a0 63 00 d1  sub     x0, x29, #24
+100003e5c: 3e 00 00 94  bl      0x100003f54 <___gxx_personality_v0+0x100003f54>
+100003e60: e8 07 40 b9  ldr     w8, [sp, #4]
+100003e64: 00 1d 00 13  sxtb    w0, w8
+100003e68: fd 7b 44 a9  ldp     x29, x30, [sp, #64]
+100003e6c: ff 43 01 91  add     sp, sp, #80
+100003e70: c0 03 5f d6  ret
+100003e74: e8 03 01 aa  mov     x8, x1
+100003e78: e0 13 00 f9  str     x0, [sp, #32]
+100003e7c: e8 1f 00 b9  str     w8, [sp, #28]
+100003e80: a0 63 00 d1  sub     x0, x29, #24
+100003e84: 34 00 00 94  bl      0x100003f54 <___gxx_personality_v0+0x100003f54>
+100003e88: 01 00 00 14  b       0x100003e8c <__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB6v15006Ec+0x7c>
+100003e8c: 01 00 00 14  b       0x100003e90 <__ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB6v15006Ec+0x80>
+100003e90: e0 13 40 f9  ldr     x0, [sp, #32]
+100003e94: 1e 00 00 94  bl      0x100003f0c <___gxx_personality_v0+0x100003f0c>
+100003e98: 1a 00 00 94  bl      0x100003f00 <___clang_call_terminate>
+
+0000000100003e9c <__ZNSt3__19use_facetB6v15006INS_5ctypeIcEEEERKT_RKNS_6localeE>:
+100003e9c: ff 83 00 d1  sub     sp, sp, #32
+100003ea0: fd 7b 01 a9  stp     x29, x30, [sp, #16]
+100003ea4: fd 43 00 91  add     x29, sp, #16
+100003ea8: e0 07 00 f9  str     x0, [sp, #8]
+100003eac: e0 07 40 f9  ldr     x0, [sp, #8]
+100003eb0: 01 00 00 b0  adrp    x1, 0x100004000 <__ZNSt3__19use_facetB6v15006INS_5ctypeIcEEEERKT_RKNS_6localeE+0x18>
+100003eb4: 21 20 40 f9  ldr     x1, [x1, #64]
+100003eb8: 18 00 00 94  bl      0x100003f18 <___gxx_personality_v0+0x100003f18>
+100003ebc: fd 7b 41 a9  ldp     x29, x30, [sp, #16]
+100003ec0: ff 83 00 91  add     sp, sp, #32
+100003ec4: c0 03 5f d6  ret
+
+0000000100003ec8 <__ZNKSt3__15ctypeIcE5widenB6v15006Ec>:
+100003ec8: ff 83 00 d1  sub     sp, sp, #32
+100003ecc: fd 7b 01 a9  stp     x29, x30, [sp, #16]
+100003ed0: fd 43 00 91  add     x29, sp, #16
+100003ed4: e0 07 00 f9  str     x0, [sp, #8]
+100003ed8: e1 1f 00 39  strb    w1, [sp, #7]
+100003edc: e0 07 40 f9  ldr     x0, [sp, #8]
+100003ee0: e1 1f c0 39  ldrsb   w1, [sp, #7]
+100003ee4: 08 00 40 f9  ldr     x8, [x0]
+100003ee8: 08 1d 40 f9  ldr     x8, [x8, #56]
+100003eec: 00 01 3f d6  blr     x8
+100003ef0: 00 1c 00 13  sxtb    w0, w0
+100003ef4: fd 7b 41 a9  ldp     x29, x30, [sp, #16]
+100003ef8: ff 83 00 91  add     sp, sp, #32
+100003efc: c0 03 5f d6  ret
+
+0000000100003f00 <___clang_call_terminate>:
+100003f00: fd 7b bf a9  stp     x29, x30, [sp, #-16]!
+100003f04: 1a 00 00 94  bl      0x100003f6c <___gxx_personality_v0+0x100003f6c>
+100003f08: 16 00 00 94  bl      0x100003f60 <___gxx_personality_v0+0x100003f60>
+
+Disassembly of section __TEXT,__stubs:
+
+0000000100003f0c <__stubs>:
+100003f0c: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x4>
+100003f10: 10 02 40 f9  ldr     x16, [x16]
+100003f14: 00 02 1f d6  br      x16
+100003f18: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x10>
+100003f1c: 10 06 40 f9  ldr     x16, [x16, #8]
+100003f20: 00 02 1f d6  br      x16
+100003f24: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x1c>
+100003f28: 10 0a 40 f9  ldr     x16, [x16, #16]
+100003f2c: 00 02 1f d6  br      x16
+100003f30: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x28>
+100003f34: 10 0e 40 f9  ldr     x16, [x16, #24]
+100003f38: 00 02 1f d6  br      x16
+100003f3c: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x34>
+100003f40: 10 12 40 f9  ldr     x16, [x16, #32]
+100003f44: 00 02 1f d6  br      x16
+100003f48: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x40>
+100003f4c: 10 16 40 f9  ldr     x16, [x16, #40]
+100003f50: 00 02 1f d6  br      x16
+100003f54: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x4c>
+100003f58: 10 26 40 f9  ldr     x16, [x16, #72]
+100003f5c: 00 02 1f d6  br      x16
+100003f60: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x58>
+100003f64: 10 2a 40 f9  ldr     x16, [x16, #80]
+100003f68: 00 02 1f d6  br      x16
+100003f6c: 10 00 00 b0  adrp    x16, 0x100004000 <__stubs+0x64>
+100003f70: 10 2e 40 f9  ldr     x16, [x16, #88]
+100003f74: 00 02 1f d6  br      x16
